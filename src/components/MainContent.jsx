@@ -16,5 +16,6 @@ function MainContent() {
     </main>
   );
 }
+expect(screen.getByRole('button')).not.toBeInTheDocument();
 
 export default MainContent;
