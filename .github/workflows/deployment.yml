@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+      - dev-*      # any branch starting with “dev-”
+      - feat/**    # any branch starting with “feat/” (can include slashes)
+
   pull_request:
     types: [opened, reopened, edited]
     branches:
